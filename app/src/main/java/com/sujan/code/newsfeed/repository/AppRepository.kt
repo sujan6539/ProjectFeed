@@ -1,7 +1,6 @@
 package com.sujan.code.newsfeed.repository
 
 import android.content.Context
-import android.widget.Toast
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -11,7 +10,6 @@ import com.sujan.code.newsfeed.network.NewsApi
 import com.sujan.code.newsfeed.network.TopStoriesType
 import com.sujan.code.newsfeed.network.model.TopStories
 import com.sujan.code.newsfeed.network.model.TopStoriesBody
-import com.sujan.code.newsfeed.utils.AndroidUtils
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import retrofit2.Retrofit

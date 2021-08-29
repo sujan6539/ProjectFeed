@@ -31,7 +31,7 @@ class HomeFragment : Fragment() {
     private var homeFragmentBaseObservable : HomeFragmentBaseObservable? = null
 
     val callback = object : FeedActionCallback {
-        override fun onFeedClick(observable: HomeFragmentBaseObservable) {
+        override fun onFeedClick(observable: ItemNewsFeedBaseObservable) {
             AndroidUtils.showToast(activity, "Clicked", Toast.LENGTH_SHORT)
         }
     }

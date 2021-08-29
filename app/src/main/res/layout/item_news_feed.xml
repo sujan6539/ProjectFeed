@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:elevation="8dp"
+        android:onClick="@{()->callback.onFeedClick(data)}"
         android:padding="4dp"
         app:cardCornerRadius="12dp">
 
@@ -36,7 +37,7 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_launcher_background"
                 app:imageUrl="@{data.image}"
-                app:layout_constraintDimensionRatio="4:3"
+                app:layout_constraintDimensionRatio="3:1.5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
