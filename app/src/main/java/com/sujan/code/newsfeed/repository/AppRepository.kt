@@ -21,14 +21,14 @@ class AppRepository(private val context: Context, retrofit: Retrofit) : Lifecycl
 
     var topStoriesLiveData : LiveData<List<TopStoriesBody>> = Transformations.distinctUntilChanged(_topStoriesMutableLiveData)
 
-    private var v:NewsApi = retrofit.create(NewsApi::class.java)
+    private var newsApi:NewsApi = retrofit.create(NewsApi::class.java)
 
     init {
         fetchNews()
     }
 
      fun fetchNews(){
-        val disposable = v.getTopStories(TopStoriesType.MOVIES.type, NewsFeedApplication.API_KEY)
+        val disposable = newsApi.getTopStories(TopStoriesType.MOVIES.type, NewsFeedApplication.API_KEY)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(this::handleResults) { error -> Timber.e(error) }

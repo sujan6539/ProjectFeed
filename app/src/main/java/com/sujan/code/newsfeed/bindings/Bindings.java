@@ -1,4 +1,4 @@
-package com.sujan.code.newsfeed.bindings.adapter;
+package com.sujan.code.newsfeed.bindings;
 
 import android.text.TextUtils;
 import android.widget.ImageView;

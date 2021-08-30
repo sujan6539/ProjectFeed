@@ -2,10 +2,6 @@ package com.sujan.code.newsfeed.bindings.adapter;
 
 import androidx.annotation.LayoutRes;
 
-/**
- * @author tjudkins
- * @since 12/27/16
- */
 
 public interface LayoutBinding {
 
